@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		E626D4DD28F4ADA60021013D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D4DC28F4ADA60021013D /* AppDelegate.swift */; };
 		E626D4DF28F4ADA60021013D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D4DE28F4ADA60021013D /* SceneDelegate.swift */; };
-		E626D4E128F4ADA60021013D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D4E028F4ADA60021013D /* ViewController.swift */; };
 		E626D4E428F4ADA60021013D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E626D4E228F4ADA60021013D /* Main.storyboard */; };
 		E626D4E628F4ADA70021013D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E626D4E528F4ADA70021013D /* Assets.xcassets */; };
 		E626D4E928F4ADA70021013D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E626D4E728F4ADA70021013D /* LaunchScreen.storyboard */; };
 		E626D4F428F4ADA80021013D /* ProjectTwoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D4F328F4ADA80021013D /* ProjectTwoTests.swift */; };
 		E626D4FE28F4ADA80021013D /* ProjectTwoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D4FD28F4ADA80021013D /* ProjectTwoUITests.swift */; };
 		E626D50028F4ADA80021013D /* ProjectTwoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D4FF28F4ADA80021013D /* ProjectTwoUITestsLaunchTests.swift */; };
+		E626D50D28F4B0690021013D /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D50C28F4B0690021013D /* TasksViewController.swift */; };
+		E626D50F28F4B1660021013D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D50E28F4B1660021013D /* Task.swift */; };
+		E626D51128F4B5AB0021013D /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D51028F4B5AB0021013D /* TaskStore.swift */; };
+		E626D51328FE397B0021013D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D51228FE397B0021013D /* DetailViewController.swift */; };
+		E626D51528FFD6730021013D /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D51428FFD6730021013D /* TaskCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,6 @@
 		E626D4D928F4ADA60021013D /* ProjectTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E626D4DC28F4ADA60021013D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E626D4DE28F4ADA60021013D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E626D4E028F4ADA60021013D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E626D4E328F4ADA60021013D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E626D4E528F4ADA70021013D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E626D4E828F4ADA70021013D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		E626D4F928F4ADA80021013D /* ProjectTwoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectTwoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E626D4FD28F4ADA80021013D /* ProjectTwoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTwoUITests.swift; sourceTree = "<group>"; };
 		E626D4FF28F4ADA80021013D /* ProjectTwoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTwoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E626D50C28F4B0690021013D /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		E626D50E28F4B1660021013D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		E626D51028F4B5AB0021013D /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
+		E626D51228FE397B0021013D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E626D51428FFD6730021013D /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +109,11 @@
 			children = (
 				E626D4DC28F4ADA60021013D /* AppDelegate.swift */,
 				E626D4DE28F4ADA60021013D /* SceneDelegate.swift */,
-				E626D4E028F4ADA60021013D /* ViewController.swift */,
+				E626D50C28F4B0690021013D /* TasksViewController.swift */,
+				E626D51228FE397B0021013D /* DetailViewController.swift */,
+				E626D50E28F4B1660021013D /* Task.swift */,
+				E626D51428FFD6730021013D /* TaskCell.swift */,
+				E626D51028F4B5AB0021013D /* TaskStore.swift */,
 				E626D4E228F4ADA60021013D /* Main.storyboard */,
 				E626D4E528F4ADA70021013D /* Assets.xcassets */,
 				E626D4E728F4ADA70021013D /* LaunchScreen.storyboard */,
@@ -258,7 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E626D4E128F4ADA60021013D /* ViewController.swift in Sources */,
+				E626D51128F4B5AB0021013D /* TaskStore.swift in Sources */,
+				E626D51528FFD6730021013D /* TaskCell.swift in Sources */,
+				E626D50F28F4B1660021013D /* Task.swift in Sources */,
+				E626D50D28F4B0690021013D /* TasksViewController.swift in Sources */,
+				E626D51328FE397B0021013D /* DetailViewController.swift in Sources */,
 				E626D4DD28F4ADA60021013D /* AppDelegate.swift in Sources */,
 				E626D4DF28F4ADA60021013D /* SceneDelegate.swift in Sources */,
 			);
